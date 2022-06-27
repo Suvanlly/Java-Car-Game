@@ -1,69 +1,67 @@
 package GamePlay;
+/*Obstacle Class which manage various random obstacles generated for highway*/
 
-public class Obstacle {
-	
-	private String obstacleName;
-	private int addFuel;
-	private int damage;
-	
-	public Obstacle()
-	{
-		
-	}
+public class Obstacle
+{
+    private String obstacleName;
+    private int addFuel;
+    private int damage;
 
-	public Obstacle(String obstacleName, int addFuel, int damage) {
-		this.obstacleName = obstacleName;
-		this.addFuel = addFuel;
-		this.damage = damage;
-	}
+    // Default Constructor
+    public Obstacle()
+    {
+        obstacleName = "unknown";
+        addFuel = 0;
+        damage = 0;
+    }
 
-	/**
-	 * @return the obstacleName
-	 */
-	public String getObstacleName() {
-		return obstacleName;
-	}
+    // Constructor method which initialise the object of class Obstacle
+    public Obstacle(String obstacleName, int addFuel, int damage)
+    {
+        this.obstacleName = obstacleName;
+        this.addFuel = addFuel;
+        this.damage = damage;
+    }
 
-	/**
-	 * @return the addFuel
-	 */
-	public int getAddFuel() {
-		return addFuel;
-	}
+    // Method to return a string that contains the details of the obstacle object
+    public String display()
+    {
+        return "Obstacle [obstacleName= " + obstacleName + ", addFuel= " + addFuel + ", damage= " + damage + "]";
+    }
 
-	/**
-	 * @return the damage
-	 */
-	public int getDamage() {
-		return damage;
-	}
+    // Accessor method to get access to the add fuel
+    public int getAddFuel()
+    {
+        return addFuel;
+    }
 
-	/**
-	 * @param obstacleName the obstacleName to set
-	 */
-	public void setObstacleName(String obstacleName) {
-		this.obstacleName = obstacleName;
-	}
+    // Accessor method to get access to the damage
+    public int getDamage()
+    {
+        return damage;
+    }
 
-	/**
-	 * @param addFuel the addFuel to set
-	 */
-	public void setAddFuel(int addFuel) {
-		this.addFuel = addFuel;
-	}
+    // Accessor method to get access to the obstacle name
+    public String getObstacleName()
+    {
+        return obstacleName;
+    }
 
-	/**
-	 * @param damage the damage to set
-	 */
-	public void setDamage(int damage) {
-		this.damage = damage;
-	}
+    // Mutator method to set the new value of add fuel
+    public void setAddFuel(int addFuel)
+    {
+        this.addFuel = addFuel;
+    }
 
+    // Mutator method to set the new value of damage
+    public void setDamage(int damage)
+    {
+        this.damage = damage;
+    }
 
-	public String display() {
-		return "Obstacle [obstacleName=" + obstacleName + ", addFuel=" + addFuel + ", damage=" + damage + "]";
-	}
-	
-	
-
+    // Mutator method to set the new value of obstacle name
+    public void setObstacleName(String obstacleName)
+    {
+        this.obstacleName = obstacleName;
+    }
 }
