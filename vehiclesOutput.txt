@@ -1,0 +1,2 @@
+Car [carType=Motorcycle, boostSpeed=4, maxFuel=100, currentFuel=84, maxSustainableDamage=-50]
+Car [carType=Motorcycle, boostSpeed=4, maxFuel=100, currentFuel=73, maxSustainableDamage=-10]
