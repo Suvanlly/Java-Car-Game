@@ -17,7 +17,6 @@ public class Game
     private ArrayList<Car> carList;
     private ArrayList<Obstacle[]> obstacles;
     private int highwayLength;
-    private int playerPosition;
     private int carXIndex;
     private int carYIndex;
     private int numOfObstacles;
